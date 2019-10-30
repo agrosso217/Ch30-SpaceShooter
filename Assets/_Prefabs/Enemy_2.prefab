@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8619049433014748117}
   - component: {fileID: 4560690053268322301}
   - component: {fileID: 300610995904805280}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cockpit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 1681857203593170650}
   - component: {fileID: 5441288292464470839}
   - component: {fileID: 6840584700133595667}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,9 +192,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3883383568758817340}
   - component: {fileID: 5012190156092944986}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy_2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 9035675115279534309}
   - component: {fileID: 2231347894709397783}
   - component: {fileID: 6781298397588466736}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Reactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

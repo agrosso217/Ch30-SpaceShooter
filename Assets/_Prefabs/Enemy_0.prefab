@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 1084215239023694336}
   - component: {fileID: 8057043961784842842}
   - component: {fileID: 9056429710749443414}
-  m_Layer: 0
+  - component: {fileID: 1503045408476784639}
+  m_Layer: 9
   m_Name: Enemy_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,6 +63,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba6778b45ef96944904d2a98bc493c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
+  fireRate: 0.3
+  health: 10
+  score: 100
+--- !u!114 &1503045408476784639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113444315410264920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c39a7818e95ec1944b2515591091dc87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: -2.5
+  keepOnScreen: 0
+  isOnScreen: 1
+  camWidth: 0
+  camHeight: 0
+  offRight: 0
+  offLeft: 0
+  offUp: 0
+  offDown: 0
 --- !u!1 &4719653203264637736
 GameObject:
   m_ObjectHideFlags: 0
@@ -74,7 +100,7 @@ GameObject:
   - component: {fileID: 4831444963413047322}
   - component: {fileID: 8599091398299225501}
   - component: {fileID: 4357394469782038994}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cockpit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +191,7 @@ GameObject:
   - component: {fileID: 1651356776279310605}
   - component: {fileID: 2789219321861262267}
   - component: {fileID: 4645995885237243343}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}

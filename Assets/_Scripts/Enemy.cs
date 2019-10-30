@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
     public float health = 10;
     public int score = 100;
 
+    private BoundsCheck bndCheck;
+
     public Vector3 pos
     {
         get
@@ -21,6 +23,11 @@ public class Enemy : MonoBehaviour
             this.transform.position = value;
         }
     }
+
+    void Awake()
+    {
+        bndCheck = GetComponent<BoundsCheck>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +38,11 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         Move();
+
+        if (bndCheck != null && bndCheck.offDown)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public virtual void Move()
